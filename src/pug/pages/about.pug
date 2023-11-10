@@ -1,0 +1,64 @@
+extends ../layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'page'
+		};
+
+block main
+	.about
+		.about__bg 
+			img(src="images/pages/about/bg1.svg", alt="alt")
+		section.about-hero
+			.about__container
+				h1 Your world
+				.about-hero__row 
+					.about-hero__image-wrapper
+						.about-hero__image 
+							img(src="images/pages/about/about-hero.png", alt="alt")
+					.about-hero__body 
+						p Lorem ipsum dolor sit amet consectetur. A tellus nulla amet risus donec orci a. Nec porta velit duis consectetur ut posuere elit. Aliquam vitae habitant at malesuada adipiscing pharetra sed ultrices donec. 
+						br
+						p Lorem ipsum dolor sit amet consectetur. A tellus nulla amet risus donec orci a. Nec porta velit duis consectetur ut posuere elit. Aliquam vitae habitant at malesuada adipiscing pharetra sed ultrices donec. 
+						br
+						p Lorem ipsum dolor sit amet consectetur. A tellus nulla amet risus donec orci a. Nec porta velit duis consectetur ut posuere elit. Aliquam vitae habitant at malesuada adipiscing pharetra sed ultrices donec. 
+		section.about-themes 
+			.about__container
+				h2 Explore NFT themes
+				p.about-themes__text 7 thematic NET entertainment parks is unique generated NFT element where you decide your all rules
+				.about-themes__swiper.swiper 
+					.swiper-wrapper
+						.swiper-slide
+							.about-themes__item 
+								.about-themes__image 
+									img(src="images/pages/about/themes/1.jpg", alt="alt")
+								h3 Tropical Island Park
+								p Lorem ipsum dolor sit amet consectetur. A tellus nulla amet risus donec orci a. Nec porta velit duis consectetur ut posuere elit. Aliquam vitae habitant at malesuada adipiscing pharetra sed ultrices donec. 
+						.swiper-slide
+							.about-themes__item 
+								.about-themes__image 
+									img(src="images/pages/about/themes/2.jpg", alt="alt")
+								h3 Tropical Island Park
+								p Lorem ipsum dolor sit amet consectetur. A tellus nulla amet risus donec orci a. Nec porta velit duis consectetur ut posuere elit. Aliquam vitae habitant at malesuada adipiscing pharetra sed ultrices donec. 
+						.swiper-slide
+							.about-themes__item 
+								.about-themes__image 
+									img(src="images/pages/about/themes/3.jpg", alt="alt")
+								h3 Tropical Island Park
+								p Lorem ipsum dolor sit amet consectetur. A tellus nulla amet risus donec orci a. Nec porta velit duis consectetur ut posuere elit. Aliquam vitae habitant at malesuada adipiscing pharetra sed ultrices donec. 
+						.swiper-slide
+							.about-themes__item 
+								.about-themes__image 
+									img(src="images/pages/about/themes/4.jpg", alt="alt")
+								h3 Tropical Island Park
+								p Lorem ipsum dolor sit amet consectetur. A tellus nulla amet risus donec orci a. Nec porta velit duis consectetur ut posuere elit. Aliquam vitae habitant at malesuada adipiscing pharetra sed ultrices donec. 
+		section.map-block 
+			.about__container
+				h2(data-aos="fade-in" data-aos-duration="1000" data-aos-delay="0") Explore the world and find your NFTs
+				.map-block__map 
+					img(src="images/map-block/1.png", alt="alt")
+
+
+
+

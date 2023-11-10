@@ -1,0 +1,171 @@
+.hero {
+	padding-top: calc((1920px * 26px) / 1440px);
+	overflow: hidden;
+	@media (max-width: 1920px){
+		padding-top: calc((1920px * 1.35vw) / 1440px);
+	}
+	&__bg {
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: auto;
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		@media (max-width: 768px){
+			flex-direction: column;
+		}
+	} 
+	&__body {
+		padding-top: calc((1920px * 100px) / 1440px);
+		padding-left: calc((1920px * 56px) / 1440px);
+		@media (max-width: 1920px){
+			padding-top: calc((1920px * 5.21vw) / 1440px);
+			padding-left: calc((1920px * 2.92vw) / 1440px);
+		}
+		@media (max-width: 768px){
+			padding: 6vw 0 0 0;
+		}
+
+		p { 
+			margin-top: calc((1920px * 20px) / 1440px);
+			max-width: calc((1920px * 481px) / 1440px);
+			@media (max-width: 1920px){
+				margin-top: calc((1920px * 1.04vw) / 1440px);
+				max-width: calc((1920px * 25.05vw) / 1440px);
+			}
+			@media (max-width: 768px){
+				margin-top: 4vw;
+				max-width: 100%;
+				text-align: center;
+			}
+		}
+	} 
+	&__btn {
+		margin-left: calc((1920px * 10px) / 1440px);
+		border-radius: calc((1920px * 8px) / 1440px);
+		margin-top: calc((1920px * 36px) / 1440px);
+		padding: calc((1920px * 18px) / 1440px) calc((1920px * 48px) / 1440px);
+		@media (max-width: 1920px){
+			margin-left: calc((1920px * 0.52vw) / 1440px);
+			border-radius: calc((1920px * 0.42vw) / 1440px);
+			margin-top: calc((1920px * 1.88vw) / 1440px);
+			padding: calc((1920px * 0.94vw) / 1440px) calc((1920px * 2.50vw) / 1440px);
+		}
+		@media (max-width: 768px){
+			margin-left: 0;
+			border-radius: calc((1920px * 0.42vw) / 1440px);
+			margin-top: 5vw;
+			padding: 0;
+			width: 30vw;
+			height: 10vw;
+		}
+		&-wrapper  {
+			@media (max-width: 768px){
+				display: flex;
+				justify-content: center;
+			}
+		}
+	}
+	&__images {
+		margin-left: calc((1920px * 20px) / 1440px);
+		width: calc((1920px * 750px) / 1440px);
+		height: calc((1920px * 800px) / 1440px);
+		position: relative;
+		@media (max-width: 1920px){
+			margin-left: calc((1920px * 1.04vw) / 1440px);
+			width: calc((1920px * 39.06vw) / 1440px);
+			height: calc((1920px * 41.67vw) / 1440px);
+		}
+		@media (max-width: 768px){
+			margin-left: 0;
+			margin-top: 8vw;
+			width: 100%;
+			height: 100vw;
+		}
+	}
+	&__image {
+		position: absolute;
+		&::before{
+			content:'';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			/* background: #6B21B6;
+			filter: blur(calc((1920px * 124px) / 1440px)); */
+			z-index: -1;
+			width: calc((1920px * 600px) / 1440px);
+			height: calc((1920px * 600px) / 1440px);
+			background: url('../images/hero/ellipse-bg.png') 0 0 / 100% 100% no-repeat;
+			@media (max-width: 1920px){
+				width: calc((1920px * 31.25vw) / 1440px);
+				height: calc((1920px * 31.25vw) / 1440px);
+			}
+			@media (max-width: 768px){
+				width: 70vw;
+				height: 70vw;
+			}
+		}
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+	&__image1 {
+		z-index: 4;
+		top: 0;
+		left: calc((1920px * 240px) / 1440px);
+		width: calc((1920px * 412px) / 1440px);
+		height: calc((1920px * 445px) / 1440px);
+		@media (max-width: 1920px){
+			left: calc((1920px * 12.50vw) / 1440px);
+			width: calc((1920px * 21.46vw) / 1440px);
+			height: calc((1920px * 23.18vw) / 1440px);
+		}
+		@media (max-width: 768px){
+			left: 38vw;
+			width: 50vw;
+			height: 53vw;
+		}
+	}
+	&__image2 {
+		z-index: 3;
+		left: 0;
+		top: calc((1920px * 170px) / 1440px);
+		width: calc((1920px * 413px) / 1440px);
+		height: calc((1920px * 466px) / 1440px);
+		@media (max-width: 1920px){
+			top: calc((1920px * 8.85vw) / 1440px);
+			width: calc((1920px * 21.51vw) / 1440px);
+			height: calc((1920px * 24.27vw) / 1440px);
+		}
+		@media (max-width: 768px){
+			top: 22vw;
+			width: 52vw;
+			height: 54vw;
+		}
+	}
+	&__image3 {
+		z-index: 2;
+		right: 0;
+		bottom: 0;
+		width: calc((1920px * 443px) / 1440px);
+		height: calc((1920px * 473px) / 1440px);
+		@media (max-width: 1920px){
+			width: calc((1920px * 23.07vw) / 1440px);
+			height: calc((1920px * 24.64vw) / 1440px);
+		}
+		@media (max-width: 768px){
+			width: 60vw;
+			height: 55vw;
+		}
+	}
+}

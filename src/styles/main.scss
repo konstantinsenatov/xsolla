@@ -1,0 +1,37 @@
+/* base */
+@import "base/var";
+@import "base/reset";
+@import "base/fonts";
+
+/* mixin */
+@import "base/mixin";
+
+/*libs*/
+@import "libs/aos";
+@import "libs/swiper-bundle.min";
+
+
+/* main */
+@import "partials/main";
+
+/* components */
+@import "partials/header";
+@import "partials/footer";
+
+
+/*blocks*/
+@import "blocks/hero";
+@import "blocks/map-block";
+@import "blocks/themes";
+@import "blocks/elements";
+@import "blocks/news";
+
+
+/* pages */
+@import "pages/about";
+@import "pages/news-page";
+@import "pages/news-single";
+@import "pages/faq";
+@import "pages/terms";
+@import "pages/zone";
+

@@ -1,0 +1,111 @@
+extends ../layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'page'
+		};
+
+block main
+	.news-page
+		.about__bg 
+			img(src="images/pages/news-page/bg.svg", alt="alt")
+		.news-page__container
+			h1 News
+			.news-page__buttons
+				button.news-page__button.is-checked(data-filter='*') 
+					h4 All posts
+				button.news-page__button(data-filter='.first') 
+					h4 Post type1
+				button.news-page__button(data-filter='.second') 
+					h4 Post type2
+			.news-page__items 
+				#news-page__row.news-page__row 
+					.news-page__item.first
+						.news__column 
+							.news__img 
+								img(src="images/news/1.png", alt="alt")
+							h3 Title TitleTitleTitle
+							p Lorem ipsum dolor sit amet consectetur. A tellus nulla amet risus donec orci a. Nec porta velit duis consectetur ut posuere elit. Aliquam vitae habitant at malesuada adipiscing pharetra sed ultrices donec. 
+							span March 01, 2023
+					.news-page__item.second
+						.news__column 
+							.news__img 
+								img(src="images/news/2.png", alt="alt")
+							h3 Title TitleTitleTitle
+							p Lorem ipsum dolor sit amet consectetur. A tellus nulla amet risus donec orci a. Nec porta velit duis consectetur ut posuere elit. Aliquam vitae habitant at malesuada adipiscing pharetra sed ultrices donec. 
+							span March 01, 2023
+					.news-page__item.first
+						.news__column 
+							.news__img 
+								img(src="images/news/3.png", alt="alt")
+							h3 Title TitleTitleTitle
+							p Lorem ipsum dolor sit amet consectetur. A tellus nulla amet risus donec orci a. Nec porta velit duis consectetur ut posuere elit. Aliquam vitae habitant at malesuada adipiscing pharetra sed ultrices donec. 
+							span March 01, 2023
+					.news-page__item.second
+						.news__column 
+							.news__img 
+								img(src="images/news/1.png", alt="alt")
+							h3 Title TitleTitleTitle
+							p Lorem ipsum dolor sit amet consectetur. A tellus nulla amet risus donec orci a. Nec porta velit duis consectetur ut posuere elit. Aliquam vitae habitant at malesuada adipiscing pharetra sed ultrices donec. 
+							span March 01, 2023
+					.news-page__item.first
+						.news__column 
+							.news__img 
+								img(src="images/news/2.png", alt="alt")
+							h3 Title TitleTitleTitle
+							p Lorem ipsum dolor sit amet consectetur. A tellus nulla amet risus donec orci a. Nec porta velit duis consectetur ut posuere elit. Aliquam vitae habitant at malesuada adipiscing pharetra sed ultrices donec. 
+							span March 01, 2023
+					.news-page__item.second
+						.news__column 
+							.news__img 
+								img(src="images/news/3.png", alt="alt")
+							h3 Title TitleTitleTitle
+							p Lorem ipsum dolor sit amet consectetur. A tellus nulla amet risus donec orci a. Nec porta velit duis consectetur ut posuere elit. Aliquam vitae habitant at malesuada adipiscing pharetra sed ultrices donec. 
+							span March 01, 2023
+					.news-page__item.first
+						.news__column 
+							.news__img 
+								img(src="images/news/1.png", alt="alt")
+							h3 Title TitleTitleTitle
+							p Lorem ipsum dolor sit amet consectetur. A tellus nulla amet risus donec orci a. Nec porta velit duis consectetur ut posuere elit. Aliquam vitae habitant at malesuada adipiscing pharetra sed ultrices donec. 
+							span March 01, 2023
+					.news-page__item.second
+						.news__column 
+							.news__img 
+								img(src="images/news/2.png", alt="alt")
+							h3 Title TitleTitleTitle
+							p Lorem ipsum dolor sit amet consectetur. A tellus nulla amet risus donec orci a. Nec porta velit duis consectetur ut posuere elit. Aliquam vitae habitant at malesuada adipiscing pharetra sed ultrices donec. 
+							span March 01, 2023
+					.news-page__item.first
+						.news__column 
+							.news__img 
+								img(src="images/news/3.png", alt="alt")
+							h3 Title TitleTitleTitle
+							p Lorem ipsum dolor sit amet consectetur. A tellus nulla amet risus donec orci a. Nec porta velit duis consectetur ut posuere elit. Aliquam vitae habitant at malesuada adipiscing pharetra sed ultrices donec. 
+							span March 01, 2023
+					.news-page__item.second
+						.news__column 
+							.news__img 
+								img(src="images/news/1.png", alt="alt")
+							h3 Title TitleTitleTitle
+							p Lorem ipsum dolor sit amet consectetur. A tellus nulla amet risus donec orci a. Nec porta velit duis consectetur ut posuere elit. Aliquam vitae habitant at malesuada adipiscing pharetra sed ultrices donec. 
+							span March 01, 2023
+					.news-page__item.first
+						.news__column 
+							.news__img 
+								img(src="images/news/2.png", alt="alt")
+							h3 Title TitleTitleTitle
+							p Lorem ipsum dolor sit amet consectetur. A tellus nulla amet risus donec orci a. Nec porta velit duis consectetur ut posuere elit. Aliquam vitae habitant at malesuada adipiscing pharetra sed ultrices donec. 
+							span March 01, 2023
+					.news-page__item.second
+						.news__column 
+							.news__img 
+								img(src="images/news/3.png", alt="alt")
+							h3 Title TitleTitleTitle
+							p Lorem ipsum dolor sit amet consectetur. A tellus nulla amet risus donec orci a. Nec porta velit duis consectetur ut posuere elit. Aliquam vitae habitant at malesuada adipiscing pharetra sed ultrices donec. 
+							span March 01, 2023
+
+			.news__btn-wrapper(data-aos="fade-right" data-aos-duration="1000" data-aos-delay="0") 
+				#news-page__btn.news__btn.general-btn
+					span View more

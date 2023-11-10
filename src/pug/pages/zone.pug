@@ -1,0 +1,62 @@
+extends ../layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'page'
+		};
+
+block main
+	.about__bg 
+		img(src="images/pages/zone/ellipse-bg-big.svg", alt="alt")
+	.zone 
+		.zone__container 
+			.zone__header 
+				.zone__btns.radiobuttons 
+					.zone__btn.radiobuttons__item
+						h4 Classic
+						input(type='radio' value='' checked='' name='nameradio')
+					.zone__btn.radiobuttons__item
+						h4 Sci-fi
+						input(type='radio' value='' name='nameradio')
+					.zone__btn.radiobuttons__item
+						h4 Prehistorical
+						input(type='radio' value='' name='nameradio')
+					.zone__btn.radiobuttons__item
+						h4 Vampire
+						input(type='radio' value='' name='nameradio')
+					.zone__btn.radiobuttons__item
+						h4 Ice Age
+						input(type='radio' value='' name='nameradio')
+					.zone__btn.radiobuttons__item
+						h4 Ocean
+						input(type='radio' value='' name='nameradio')
+					.zone__btn.radiobuttons__item
+						h4 Sand
+						input(type='radio' value='' name='nameradio')
+
+			.zone__content 
+				.zone__content-body 
+					h2 Vampire Park
+					p Lorem ipsum dolor sit amet consectetur. A tellus nulla amet risus donec orci a. Nec porta velit duis consectetur ut posuere elit. Aliquam vitae habitant at malesuada adipiscing pharetra sed ultrices donec. Lorem ipsum dolor sit amet consectetur. 
+				.zone__content-card.card-zone 
+					.card-zone__close 
+						img(src="images/pages/zone/x.svg", alt="alt")
+					.card-zone__container 
+						.card-zone__image 
+							img(src="images/pages/zone/card1.png", alt="alt")
+						.card-zone__id ID 39000
+						p.card-zone__text Lorem ipsum dolor sit amet consectetur. A tellus nulla amet risus donec orci a. Nec porta velit duis consectetur ut posuere elit. Aliquam vitae habitant at malesuada adipiscing pharetra sed ultrices donec. 
+						.card-zone__bottom 
+							p.card-zone__price 
+								span.card-zone__price-num 9299  
+								| $
+							.card-zone__buy.general-btn 
+								span Buy item
+
+			.zone__map-container 
+				.zone__map 
+					img(src="images/pages/zone/bg.svg", alt="alt")
+
+
+

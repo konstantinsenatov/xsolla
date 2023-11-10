@@ -1,0 +1,33 @@
+@font-face {
+	font-family: 'Inter';
+	src: url('../fonts/Inter_Regular/Inter_Regular.eot');
+	src: local('Inter_Regular'), local('../fonts/Inter_Regular/Inter_Regular'),
+		url('../fonts/Inter_Regular/Inter_Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Inter_Regular/Inter_Regular.woff') format('woff'),
+		url('../fonts/Inter_Regular/Inter_Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Arsenica';
+	src: url('../fonts/Arsenica_Regular/Arsenica_Regular.eot');
+	src: local('Arsenica_Regular'), local('../fonts/Arsenica_Regular/Arsenica_Regular'),
+		url('../fonts/Arsenica_Regular/Arsenica_Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Arsenica_Regular/Arsenica_Regular.woff') format('woff'),
+		url('../fonts/Arsenica_Regular/Arsenica_Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Ubuntu';
+	src: url('../fonts/Ubuntu_Regular/Ubuntu_Regular.eot');
+	src: local('Ubuntu_Regular'), local('../fonts/Ubuntu_Regular/Ubuntu_Regular'),
+		url('../fonts/Ubuntu_Regular/Ubuntu_Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Ubuntu_Regular/Ubuntu_Regular.woff') format('woff'),
+		url('../fonts/Ubuntu_Regular/Ubuntu_Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}

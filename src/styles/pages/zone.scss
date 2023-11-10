@@ -1,0 +1,368 @@
+
+.radiobuttons {}
+.radiobuttons__item {
+	position: relative;
+	padding: calc((1920px * 10px) / 1440px) calc((1920px * 16px) / 1440px) calc((1920px * 10px) / 1440px) calc((1920px * 56px) / 1440px);
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-ms-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	@media (max-width: 1920px){
+		padding: calc((1920px * 0.52vw) / 1440px) calc((1920px * 0.83vw) / 1440px) calc((1920px * 0.52vw) / 1440px) calc((1920px * 2.92vw) / 1440px);
+	}
+	@media (max-width: 768px){
+		padding: calc((1920px * 1vw) / 1440px) calc((1920px * 1.5vw) / 1440px) calc((1920px * 1vw) / 1440px) calc((1920px * 10vw) / 1440px);
+	}
+}
+
+.radiobuttons__item.active{
+	color: #000;
+}
+
+.radiobuttons__item.active:after{
+	transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-webkit-transform: scale(1);
+	-o-transform: scale(1);
+}
+
+.radiobuttons__item:before{
+	content: '';
+	width: calc((1920px * 32px) / 1440px);
+	height: calc((1920px * 32px) / 1440px);
+	position: absolute;
+	left: calc((1920px * 16px) / 1440px);
+	top: calc((1920px * 8px) / 1440px);
+	border-radius: 50%;
+	background: url('../images/icons/Polygon6-btn.svg') 0 0 / 100% 100% no-repeat;
+	@media (max-width: 1920px){
+		width: calc((1920px * 1.67vw) / 1440px);
+		height: calc((1920px * 1.67vw) / 1440px);
+		left: calc((1920px * 0.83vw) / 1440px);
+		top: calc((1920px * 0.42vw) / 1440px);
+	}
+	@media (max-width: 768px){
+		width: 6vw;
+		height: 6vw;
+	}
+}
+.radiobuttons__item:after{
+	position: absolute;
+	/* width: calc((1920px * 12px) / 1440px);
+	height: calc((1920px * 12px) / 1440px);
+	left: calc((1920px * 10px) / 1440px);
+	top: calc((1920px * 18px) / 1440px); */
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: #C14FCB;
+	content: '';
+	border-radius: 50%;
+
+	transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-ms-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+
+	transform: scale(0);
+	-moz-transform: scale(0);
+	-ms-transform: scale(0);
+	-webkit-transform: scale(0);
+	-o-transform: scale(0);
+
+	background: rgba(107, 33, 182, 0.2);
+	border-radius: calc((1920px * 8px) / 1440px);
+	@media (max-width: 1920px){
+		border-radius: calc((1920px * 0.42vw) / 1440px);
+	}
+}
+
+.radiobuttons__item input{
+	display: none;
+}
+
+
+.zone {
+	margin-bottom: calc((1920px * 60px) / 1440px);
+	position: relative;
+	@media (max-width: 1920px){
+		margin-bottom: calc((1920px * 3.13vw) / 1440px);
+	}
+	&__bg {
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: auto;
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	} 	
+	&__container {
+		width: calc((1920px * 1180px) / 1440px);
+		max-width: 100%;
+		padding-top: calc((1920px * 36px) / 1440px);
+		margin: 0 auto;
+		position: relative;
+		@media (max-width: 1920px){
+			width: calc((1920px * 61.46vw) / 1440px);
+			padding-top: calc((1920px * 1.88vw) / 1440px);
+		}
+		@media (max-width: 768px){
+			width: 90%;
+		}
+	}
+	&__header {
+		padding: calc((1920px * 16px) / 1440px) calc((1920px * 55px) / 1440px) calc((1920px * 20px) / 1440px);
+		background: url('../images/pages/zone/header.png') 0 0 / 100% 100% no-repeat;
+		@media (max-width: 1920px){
+			padding: calc((1920px * 0.83vw) / 1440px) calc((1920px * 2.86vw) / 1440px) calc((1920px * 1.04vw) / 1440px);
+		}
+		@media (max-width: 768px){
+			background: none;
+			padding: 0;
+		}
+	} 
+	&__btns {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		@media (max-width: 768px){
+			flex-wrap: wrap;
+		}
+	}
+	&__btn {
+		@media (max-width: 768px){
+			margin-top: 2vw;
+			margin-left: 6vw;
+			flex: 1 1 100%;
+		}
+	}
+	&__content {
+		margin-top: calc((1920px * 24px) / 1440px);
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		@media (max-width: 1920px){
+			margin-top: calc((1920px * 1.25vw) / 1440px);
+		}
+		@media (max-width: 768px){
+			margin-top: 60vw;
+			flex-direction: column;
+			align-items: center;
+		}
+		&-body {
+			position: relative;
+			max-width: calc((1920px * 486px) / 1440px);
+			@media (max-width: 1920px){
+				max-width: calc((1920px * 25.31vw) / 1440px);
+			}
+			@media (max-width: 768px){
+				max-width: 80%;
+			}
+			h2 {
+				text-align: left;
+			}
+			p {
+				margin-top: calc((1920px * 24px) / 1440px);
+				@media (max-width: 1920px){
+					margin-top: calc((1920px * 1.25vw) / 1440px);
+				}
+			}
+			&::before{
+				content:'';
+				position: absolute;
+				z-index: -1;
+				top: -20%;
+				left: -20%;
+				width: 140%;
+				height: 140%;
+				background: url('../images/pages/zone/ellipse-bg.svg') 0 0 / 100% 100% no-repeat;
+			}	
+		}
+		&-card {
+		}
+	}
+	&__map {
+		width: 100%;
+		height: 100%;
+		@media (max-width: 768px){
+			height: 70%;
+		}
+		img {
+			width: 100%;
+			height: 100%;
+		}
+		&-container {
+			position: absolute;
+			z-index: -2;
+			top: 0;
+			left: calc((1920px * -130px) / 1440px);
+			width: calc(100% + calc((1920px * 260px) / 1440px));
+			width: 100%;
+			height: 100%;
+			@media (max-width: 1920px){
+				left: calc((1920px * -6.77vw) / 1440px);
+				width: calc(100% + calc((1920px * 13.54vw) / 1440px));
+				width: 100%;
+			}
+		}
+	}
+}
+
+.card-zone {
+	width: calc((1920px * 470px) / 1440px);
+	position: relative;
+	z-index: 9;
+	padding: calc((1920px * 32px) / 1440px) calc((1920px * 48px) / 1440px);
+	margin-right: calc((1920px * -90px) / 1440px);
+	@media (max-width: 1920px){
+		width: calc((1920px * 24.48vw) / 1440px);
+		padding: calc((1920px * 1.67vw) / 1440px) calc((1920px * 2.50vw) / 1440px);
+		margin-right: calc((1920px * -4.69vw) / 1440px);
+	}
+	@media (max-width: 768px){
+		width: 90%;
+		padding: 8vw;
+		margin: 0;
+		margin-top: 8vw;
+	}
+	&::before{
+		content:'';
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: url('../images/pages/zone/bg-card.png') 0 0 / 100% 100% no-repeat;
+	}
+	&__close {
+		cursor: pointer;
+		position: absolute;
+		top: calc((1920px * 25px) / 1440px);
+		right: calc((1920px * 25px) / 1440px);
+		width: calc((1920px * 24px) / 1440px);
+		height: calc((1920px * 24px) / 1440px);
+		transform: rotate(45deg);
+		@media (max-width: 1920px){
+			top: calc((1920px * 1.30vw) / 1440px);
+			right: calc((1920px * 1.30vw) / 1440px);
+			width: calc((1920px * 1.25vw) / 1440px);
+			height: calc((1920px * 1.25vw) / 1440px);
+		}
+		@media (max-width: 768px){
+			width: 8vw;
+			height: 8vw;
+		}
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+	&__container {
+	}
+	&__image {
+		padding-top: 125.48%;
+		position: relative;
+		img {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			width: calc(100% - calc((1920px * 80px) / 1440px));
+			height: 100%;
+			transform: translate(-50%, 0);
+			object-fit: cover;
+			@media (max-width: 1920px){
+				width: calc(100% - calc((1920px * 4.17vw) / 1440px));
+			}
+		}
+		&::before{
+			content:'';
+			position: absolute;
+			z-index: -1;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 690px;
+			height: 607px;
+			background: url('../images/pages/zone/ellipse-bg.svg') 0 0 / 100% 100% no-repeat;
+			@media (max-width: 1920px){
+				width: 35.94vw;
+				height: 31.61vw;
+			}
+		}
+	}
+	&__id {
+		margin-top: calc((1920px * 24px) / 1440px);
+		font-family: 'Ubuntu';
+		font-style: normal;
+		font-weight: 400;
+		font-size: calc((1920px * 12px) / 1440px);
+		line-height: 140%;
+		color: #FFFFFF;
+		@media (max-width: 1920px){
+			margin-top: calc((1920px * 1.25vw) / 1440px);
+			font-size: calc((1920px * 0.63vw) / 1440px);
+		}
+		@media (max-width: 768px){
+			margin-top: 6vw;
+			font-size: 4vw;
+		}
+	}
+	&__text {
+		margin-top: calc((1920px * 16px) / 1440px);
+		@media (max-width: 1920px){
+			margin-top: calc((1920px * 0.83vw) / 1440px);
+		}
+		@media (max-width: 768px){
+			margin-top: 3vw;
+		}
+	}
+	&__bottom {
+		margin-top: calc((1920px * 16px) / 1440px);
+		display: flex;
+		align-items: center;
+		@media (max-width: 1920px){
+			margin-top: calc((1920px * 0.83vw) / 1440px);
+		}
+		@media (max-width: 768px){
+			margin-top: 6vw;
+		}
+	}
+	&__price {
+		padding-right: calc((1920px * 30px) / 1440px);
+		flex: 0 1 50%;
+		display: flex;
+		align-items: center;
+		font-family: 'Arsenica';
+		font-style: normal;
+		font-weight: 400;
+		font-size: calc((1920px * 48px) / 1440px);
+		line-height: calc((1920px * 58px) / 1440px);
+		color: #FFFFFF;
+		@media (max-width: 1920px){
+			padding-right: calc((1920px * 1.56vw) / 1440px);
+			font-size: calc((1920px * 2.50vw) / 1440px);
+			line-height: calc((1920px * 3.02vw) / 1440px);
+		}
+		@media (max-width: 768px){
+			font-size: 8vw;
+			line-height: 8vw;
+		}
+	}
+	&__buy {
+		flex: 0 1 50%;
+		padding: calc((1920px * 18px) / 1440px) calc((1920px * 5px) / 1440px);
+		@media (max-width: 1920px){
+			padding: calc((1920px * 0.94vw) / 1440px) calc((1920px * 0.26vw) / 1440px);
+		}
+	}
+}
